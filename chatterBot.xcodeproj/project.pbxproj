@@ -6,17 +6,30 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXFileReference section */
-		64BBEBD22E15B4FA00AB4DA4 /* chatterBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chatterBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
+/* Begin PBXBuildFile section */
+		6416484D2E16D1F10022B307 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6416484C2E16D1F10022B307 /* Message.swift */; };
+		6416484F2E16D6580022B307 /* MessageBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6416484E2E16D6580022B307 /* MessageBubbleView.swift */; };
+		64B1B9442E1C203E009487B5 /* MessageInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B1B9432E1C203E009487B5 /* MessageInputView.swift */; };
+		64B1B9462E1C24FC009487B5 /* TypingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B1B9452E1C24FC009487B5 /* TypingIndicator.swift */; };
+		64BBEBE42E15B59500AB4DA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64BBEBE02E15B59500AB4DA4 /* Assets.xcassets */; };
+		64BBEBE52E15B59500AB4DA4 /* chatterBotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BBEBE12E15B59500AB4DA4 /* chatterBotApp.swift */; };
+		64BBEBE62E15B59500AB4DA4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BBEBE22E15B59500AB4DA4 /* ContentView.swift */; };
+		64BBEBEC2E15B5E500AB4DA4 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BBEBEB2E15B5E500AB4DA4 /* APIClient.swift */; };
+		64BBEBEE2E15C57B00AB4DA4 /* OpenAIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BBEBED2E15C57B00AB4DA4 /* OpenAIResponse.swift */; };
+/* End PBXBuildFile section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		64BBEBD42E15B4FA00AB4DA4 /* chatterBot */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = chatterBot;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
+/* Begin PBXFileReference section */
+		6416484C2E16D1F10022B307 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		6416484E2E16D6580022B307 /* MessageBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubbleView.swift; sourceTree = "<group>"; };
+		64B1B9432E1C203E009487B5 /* MessageInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInputView.swift; sourceTree = "<group>"; };
+		64B1B9452E1C24FC009487B5 /* TypingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingIndicator.swift; sourceTree = "<group>"; };
+		64BBEBD22E15B4FA00AB4DA4 /* chatterBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chatterBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64BBEBE02E15B59500AB4DA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64BBEBE12E15B59500AB4DA4 /* chatterBotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatterBotApp.swift; sourceTree = "<group>"; };
+		64BBEBE22E15B59500AB4DA4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		64BBEBEB2E15B5E500AB4DA4 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		64BBEBED2E15C57B00AB4DA4 /* OpenAIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIResponse.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		64BBEBCF2E15B4FA00AB4DA4 /* Frameworks */ = {
@@ -32,7 +45,8 @@
 		64BBEBC92E15B4FA00AB4DA4 = {
 			isa = PBXGroup;
 			children = (
-				64BBEBD42E15B4FA00AB4DA4 /* chatterBot */,
+				64BBEBE32E15B59500AB4DA4 /* chatterBot */,
+				64BBEBE92E15B5A800AB4DA4 /* Assets */,
 				64BBEBD32E15B4FA00AB4DA4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +57,53 @@
 				64BBEBD22E15B4FA00AB4DA4 /* chatterBot.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		64BBEBE32E15B59500AB4DA4 /* chatterBot */ = {
+			isa = PBXGroup;
+			children = (
+				64BBEBE12E15B59500AB4DA4 /* chatterBotApp.swift */,
+				64BBEBE22E15B59500AB4DA4 /* ContentView.swift */,
+				64BBEBE82E15B5A300AB4DA4 /* Models */,
+				64BBEBE72E15B59E00AB4DA4 /* Views */,
+				64BBEBEA2E15B5C600AB4DA4 /* API */,
+			);
+			path = chatterBot;
+			sourceTree = "<group>";
+		};
+		64BBEBE72E15B59E00AB4DA4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6416484E2E16D6580022B307 /* MessageBubbleView.swift */,
+				64B1B9432E1C203E009487B5 /* MessageInputView.swift */,
+				64B1B9452E1C24FC009487B5 /* TypingIndicator.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		64BBEBE82E15B5A300AB4DA4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				64BBEBED2E15C57B00AB4DA4 /* OpenAIResponse.swift */,
+				6416484C2E16D1F10022B307 /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		64BBEBE92E15B5A800AB4DA4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				64BBEBE02E15B59500AB4DA4 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		64BBEBEA2E15B5C600AB4DA4 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				64BBEBEB2E15B5E500AB4DA4 /* APIClient.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +120,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				64BBEBD42E15B4FA00AB4DA4 /* chatterBot */,
 			);
 			name = chatterBot;
 			packageProductDependencies = (
@@ -109,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64BBEBE42E15B59500AB4DA4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +178,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64B1B9462E1C24FC009487B5 /* TypingIndicator.swift in Sources */,
+				64BBEBE52E15B59500AB4DA4 /* chatterBotApp.swift in Sources */,
+				64B1B9442E1C203E009487B5 /* MessageInputView.swift in Sources */,
+				6416484F2E16D6580022B307 /* MessageBubbleView.swift in Sources */,
+				64BBEBE62E15B59500AB4DA4 /* ContentView.swift in Sources */,
+				6416484D2E16D1F10022B307 /* Message.swift in Sources */,
+				64BBEBEE2E15C57B00AB4DA4 /* OpenAIResponse.swift in Sources */,
+				64BBEBEC2E15B5E500AB4DA4 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
