@@ -22,7 +22,7 @@ struct ContentView: View {
     /// - Warning: This API key should be kept secure and not exposed in version control
     ///   or public repositories. Consider using configuration files or secure vaults.
     @State private var client = APIClient(
-        apiKey: "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"
+        apiKey: ""
     )
 
     /// Array containing all messages in the current chat conversation.
